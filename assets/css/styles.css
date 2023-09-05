@@ -1,51 +1,180 @@
-footer {
-    display: flex;
-    background-color: black;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.footer-box-info {
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    margin-top: 20px;
-    border-right:  1px solid rgba(139, 138, 138, 0.119);
-}
-.footer-box-info nav ul li {
-    margin: 20px;
-    
-}
-.footer-box-info nav ul li a {
-    padding: 20px;
-    margin: 20px;
-    color: white;
-    font-style: none;
-    text-decoration: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.apresentacao-marca img {
-    width: 50%;
-    max-width: 300px;
+footer {
+    margin-top: 80px;
+    flex-wrap: wrap;
+    background-color: rgb(255, 208, 0);
+    padding-bottom: 20px;
 }
-h1{
-    color: #ffab00;
-    margin-bottom: 35px;
+.logo img{
+    width: 150px;
 }
-a :hover{
-    color: rgb(255, 208, 0);
-    transition: 0.5s;
-    text-shadow: 1px 1px 12px #ffaa0095;
+.selos,
+.metodo-pag h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
-@media (max-width: 920px) {
-    footer {
+
+.itens-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+}
+.direitos p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+    .itens-footer {
+        flex-direction: column;
+    }
+
+    .logo,
+    .metodo-pag,
+    .selos {
+        margin-top: 50px;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+}
+
+/*@media screen and (max-width: 1053px) {
+    footer figure figcaption {
+        font-size: 0.9rem;
+    }
+
+    .box-info,
+    .button {
+        width: 180px;
+    }
+
+    footer figure img {
+        width: 120px;
+    }
+
+}
+
+@media screen and (max-width: 1067px) {
+    .metodos {
+        margin-left: -80px;
+    }
+
+}
+
+@media screen and (max-width: 902px) {
+    .itens-footer {
+        flex-wrap: wrap;
+    }
+
+    .part2 {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .part1 {
+        flex-direction: column;
+    }
+
+    .metodos {
+        margin-right: 15px;
+        margin-top: 20%;
+    }
+
+
+    .institucional {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .insert-infos {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    footer form {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    footer form {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .insert-infos{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box-info,
+    .button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .itens-footer {
         display: block;
     }
-    h1{
-        border-top: 1px solid rgba(139, 138, 138, 0.318);
-        padding-top: 12px;
+
+    .part2 {
+        align-items: start;
     }
-    .apresentacao-marca {
-        text-align: center;
+
+    .metodos {
+        margin-left: 0;
     }
-}
+
+    .align-itens-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .itens-footer-right, .intens-footer-left{
+        width: 50%;
+    }
+    .box-info,
+    .button {
+        width: 100%;
+   
+    }
+    .itens-footer-right{
+        margin-left: 5%;
+    }
+    .creditos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .midias, .feito{
+        margin-top: 5%;
+    }
+    footer li{
+        font-size: 0.7rem;
+    }
+    footer h3{
+        font-size: 0.9rem;
+    }
+}*/
