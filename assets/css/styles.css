@@ -6,44 +6,240 @@
 }
 
 footer {
+    border-top: 1px solid black;
     margin-top: 80px;
-    flex-wrap: wrap;
+    padding-top: 20px;
 }
 
-.selos,
-.metodo-pag h3 {
+.insert-infos {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+
+}
+
+footer form {
+    display: flex;
+    margin-left: 10px;
+    gap: 20px;
+}
+p{
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin:10px
+}
+.box-info {
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-around;
+    width: 250px;
+    height: 50px;
+}
+
+
+footer figure img {
+    width: 150px;
+}
+.container-footer{
+    background-color: #f5f5f5;
 }
 
 .itens-footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-    background-color: #e0e4e4;
-    padding: 20px;
-}
-.direitos p{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.8rem;
+
+    justify-content: center;
+    gap: 10%;
+    padding: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: baseline;
+
 }
 
-@media screen and (max-width: 640px) {
+footer h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    border: none;
+    width: 200px;
+    background-color: #aaaaaa;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer li {
+    color: #676767;
+    font-size: 0.9rem;
+    margin-top: 5px;
+
+
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+.part1,
+.part2 {
+    display: flex;
+    gap: 20%;
+}
+
+.departamentos,
+.institucional,
+.contato,
+.metodos {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.align-selos{
+    display: flex;
+}
+.align-selos figure img{
+    width:100%;
+}
+.creditos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 1053px) {
+    footer figure figcaption {
+        font-size: 0.9rem;
+    }
+
+    .box-info,
+    .button {
+        width: 180px;
+    }
+
+    footer figure img {
+        width: 120px;
+    }
+
+}
+
+@media screen and (max-width: 1067px) {
+    .metodos {
+        margin-left: -80px;
+    }
+
+}
+
+@media screen and (max-width: 902px) {
     .itens-footer {
+        flex-wrap: wrap;
+    }
+
+    .part2 {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .part1 {
         flex-direction: column;
     }
 
-    .logo,
-    .metodo-pag,
-    .selos {
-        margin-top: 50px;
+    .metodos {
+        margin-right: 15px;
+        margin-top: 20%;
     }
 
-    .logo img {
-        width: 250px;
+
+    .institucional {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .insert-infos {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    footer form {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    footer form {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .insert-infos{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box-info,
+    .button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .itens-footer {
+        display: block;
+    }
+
+    .part2 {
+        align-items: start;
+    }
+
+    .metodos {
+        margin-left: 0;
+    }
+
+    .align-itens-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .itens-footer-right, .intens-footer-left{
+        width: 50%;
+    }
+    .box-info,
+    .button {
+        width: 100%;
+   
+    }
+    .itens-footer-right{
+        margin-left: 5%;
+    }
+    .creditos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .midias, .feito{
+        margin-top: 5%;
+    }
+    footer li{
+        font-size: 0.7rem;
+    }
+    footer h3{
+        font-size: 0.9rem;
     }
 }
